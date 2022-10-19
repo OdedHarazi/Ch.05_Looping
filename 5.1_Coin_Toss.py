@@ -6,9 +6,19 @@ COIN TOSS PROGRAM
 3.) Add a loop so that the program does this 50 times.
 4.) Create a running total for the number of heads and the number of tails and print the total at the end.
 '''
-
-
-
+import random
+heads = 0
+tails = 0
+for i in range(50):
+    num = random.randrange(2)
+    if num == 0:
+        print("Heads")
+        heads += 1
+    else:
+        print("Tails")
+        tails += 1
+print("You Flipped Heads",heads,"Times!")
+print("You Flipped Tails",tails,"Times!")
 
 
 
